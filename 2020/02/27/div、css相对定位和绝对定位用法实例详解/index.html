@@ -7,19 +7,21 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>分类: 面试 - 吴某的博客</title>
+<title>div&amp;&amp;css相对定位和绝对定位用法讲解 - 吴某的博客</title>
 
 
-    <meta name="description" content="技术博客，java，前端">
-<meta property="og:type" content="website">
-<meta property="og:title" content="吴某的博客">
-<meta property="og:url" content="https://yoursite.com/categories/%E9%9D%A2%E8%AF%95/index.html">
+    <meta name="description" content="css定位用法讲解">
+<meta property="og:type" content="article">
+<meta property="og:title" content="div&amp;&amp;css相对定位和绝对定位用法讲解">
+<meta property="og:url" content="https://yoursite.com/2020/02/27/div%E3%80%81css%E7%9B%B8%E5%AF%B9%E5%AE%9A%E4%BD%8D%E5%92%8C%E7%BB%9D%E5%AF%B9%E5%AE%9A%E4%BD%8D%E7%94%A8%E6%B3%95%E5%AE%9E%E4%BE%8B%E8%AF%A6%E8%A7%A3/index.html">
 <meta property="og:site_name" content="吴某的博客">
-<meta property="og:description" content="技术博客，java，前端">
+<meta property="og:description" content="css定位用法讲解">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://yoursite.com/images/og_image.png">
+<meta property="article:published_time" content="2020-02-27T10:06:19.000Z">
+<meta property="article:modified_time" content="2020-02-27T10:11:58.960Z">
 <meta property="article:author" content="wj">
-<meta property="article:tag" content="java spring springbooot html css js JavaScript vue 算法 免费">
+<meta property="article:tag" content="css">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://yoursite.com/images/og_image.png">
 
@@ -27,7 +29,7 @@
 
 
 
-<link rel="alternative" href="/atom.xml" title="吴某的博客" type="application/atom+xml">
+<link rel="alternative" href="/atom.xml" title="div&amp;&amp;css相对定位和绝对定位用法讲解" type="application/atom+xml">
 
 
 
@@ -82,7 +84,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo2.png" alt="吴某的博客" height="28">
+                <img src="/images/logo2.png" alt="div&amp;&amp;css相对定位和绝对定位用法讲解" height="28">
             
             </a>
         </div>
@@ -115,6 +117,10 @@
                     
                 
                 
+                <a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
                 
                 <a class="navbar-item search" title="搜索" href="javascript:;">
                     <i class="fas fa-search"></i>
@@ -128,228 +134,118 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-02-27T10:06:19.000Z">2020-02-27</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/css/">css</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    5 分钟 读完 (大约 705 个字)
+                </span>
+                
+                
+                <span class="level-item has-text-grey" id="busuanzi_container_page_pv">
+                    <i class="far fa-eye"></i>
+                    <span id="busuanzi_value_page_pv">0</span>次访问
+                </span>
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                div&amp;&amp;css相对定位和绝对定位用法讲解
+            
+        </h1>
+        <div class="content">
+            <h3 id="css定位用法讲解"><a href="#css定位用法讲解" class="headerlink" title="css定位用法讲解"></a>css定位用法讲解</h3><hr>
+<a id="more"></a>
+<h3 id="CSS-relative相对定位"><a href="#CSS-relative相对定位" class="headerlink" title="CSS relative相对定位"></a>CSS relative相对定位</h3><p>设置为相对定位的元素框会偏移某个距离。元素仍然保持其未定位前的形状，它原本所占的空间仍保留。</p>
+<h4 id="CSS-相对定位"><a href="#CSS-相对定位" class="headerlink" title="CSS 相对定位"></a>CSS 相对定位</h4><p>相对定位是一个非常容易掌握的概念。如果对一个元素进行相对定位，它将出现在它所在的位置上。然后，可以通过设置垂直或水平位置，让这个元素“相对于”它的起点进行移动。</p>
+<p>如果将 top 设置为 20px，那么框将在原位置顶部下面 20 像素的地方。如果 left 设置为 30 像素，那么会在元素左边创建 30 像素的空间，也就是将元素向右移动。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#main_relative &#123;  </span><br><span class="line">  position: relative;  </span><br><span class="line">  left: 30px;  </span><br><span class="line">  top: 20px;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>注意，在使用相对定位时，无论是否进行移动，元素仍然占据原来的空间。因此，移动元素会导致它覆盖其它框。</strong></p>
+<h3 id="css-position-绝对定位"><a href="#css-position-绝对定位" class="headerlink" title="css position 绝对定位"></a>css position 绝对定位</h3><p><strong>注意： 设置为绝对定位的元素框从文档流完全删除，并相对于其包含块定位，包含块可能是文档中的另一个元素或者是初始包含块。元素原先在正常文档流中所占的空间会关闭，就好像该元素原来不存在一样。元素定位后生成一个块级框，而不论原来它在正常流中生成何种类型的框。</strong><br>绝对定位使元素的位置与文档流无关，因此不占据空间。这一点与相对定位不同，相对定位实际上被看作普通流定位模型的一部分，因为元素的位置相对于它在普通流中的位置。<br>普通流中其它元素的布局就像绝对定位的元素不存在一样：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#main_relative &#123;  </span><br><span class="line">  position: relative;  </span><br><span class="line">  left: 30px;  </span><br><span class="line">  top: 20px;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>绝对定位的元素的位置相对于最近的已定位祖先元素，如果元素没有已定位的祖先元素，那么它的位置相对于最初的包含块。</p>
+<p>对于定位的主要问题是要记住每种定位的意义。所以，现在让我们复习一下学过的知识吧：相对定位是“相对于”元素在文档中的初始位置，而绝对定位是“相对于”最近的已定位祖先元素，如果不存在已定位的祖先元素，那么“相对于”最初的包含块。</p>
+<p>注释：根据用户代理的不同，最初的包含块可能是画布或 HTML 元素。</p>
+
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/tags/css/" rel="tag">css</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+<div class="card">
     <div class="card-content">
-        <nav class="breadcrumb" aria-label="breadcrumbs">
-        <ul>
-            <li><a href="/categories">分类</a></li>
+        <h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3>
+        <div class="buttons is-centered">
             
-            <li class="is-active"><a href="#" aria-current="page">面试</a></li>
-        </ul>
-        </nav>
-    </div>
-</div>
+                
+<a class="button is-info donate">
+    <span class="icon is-small">
+        <i class="fab fa-alipay"></i>
+    </span>
+    <span>支付宝</span>
+    <div class="qrcode"><img src="/images/WechatIMG2.jpeg" alt="支付宝"></div>
+</a>
 
-    
-<div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-02-25T11:52:42.000Z">2020-02-25</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/%E9%9D%A2%E8%AF%95/">面试</a>
-                </div>
                 
                 
-                <span class="level-item has-text-grey">
-                    
-                    
-                    13 分钟 读完 (大约 1980 个字)
-                </span>
+<a class="button is-success donate">
+    <span class="icon is-small">
+        <i class="fab fa-weixin"></i>
+    </span>
+    <span>微信</span>
+    <div class="qrcode"><img src="/images/WechatIMG1.jpeg" alt="微信"></div>
+</a>
+
                 
-                
-            </div>
         </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2020/02/25/js%E7%BC%96%E7%A8%8B%E9%83%A8%E5%88%86%E9%9D%A2%E8%AF%95%E9%A2%982/">js编程部分面试题2</a>
-            
-        </h1>
-        <div class="content">
-            <h3 id="javascript-算法题"><a href="#javascript-算法题" class="headerlink" title="javascript 算法题"></a>javascript 算法题</h3><hr>
-        </div>
-        
-        
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2020/02/25/js%E7%BC%96%E7%A8%8B%E9%83%A8%E5%88%86%E9%9D%A2%E8%AF%95%E9%A2%982/#more">阅读更多</a>
-                </div>
-            </div>
-        </div>
-        
-        
     </div>
 </div>
 
 
 
-
-
-
-
-
-    
-<div class="card">
-    
-    <div class="card-content article ">
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
         
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-02-25T11:52:42.000Z">2020-02-25</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/%E9%9D%A2%E8%AF%95/">面试</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    10 分钟 读完 (大约 1525 个字)
-                </span>
-                
-                
-            </div>
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/2020/02/27/NPM%E5%92%8CYarn%E6%B7%BB%E5%8A%A0%E6%B7%98%E5%AE%9D%E9%95%9C%E5%83%8F/">
+                <span class="level-item">NPM和Yarn添加淘宝镜像</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
         </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2020/02/25/js%E7%BC%96%E7%A8%8B%E9%83%A8%E5%88%86%E9%9D%A2%E8%AF%95%E9%A2%98/">js编程部分面试题</a>
-            
-        </h1>
-        <div class="content">
-            <h3 id="javascript-算法题"><a href="#javascript-算法题" class="headerlink" title="javascript 算法题"></a>javascript 算法题</h3><hr>
-        </div>
-        
-        
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2020/02/25/js%E7%BC%96%E7%A8%8B%E9%83%A8%E5%88%86%E9%9D%A2%E8%AF%95%E9%A2%98/#more">阅读更多</a>
-                </div>
-            </div>
-        </div>
-        
         
     </div>
 </div>
-
-
-
-
-
-
-
-
-    
-<div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-02-25T11:37:18.000Z">2020-02-25</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/%E9%9D%A2%E8%AF%95/">面试</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    10 分钟 读完 (大约 1536 个字)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2020/02/25/js%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%982/">【前端面试】经典面试题基础</a>
-            
-        </h1>
-        <div class="content">
-            <h3 id="javascript基础面试题2"><a href="#javascript基础面试题2" class="headerlink" title="javascript基础面试题2"></a>javascript基础面试题2</h3><hr>
-        </div>
-        
-        
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2020/02/25/js%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%982/#more">阅读更多</a>
-                </div>
-            </div>
-        </div>
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    
-<div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-03-12T05:03:23.000Z">2019-03-12</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/%E9%9D%A2%E8%AF%95/">面试</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    6 分钟 读完 (大约 833 个字)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/03/12/js%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98/">【前端面试】经典面试题基础</a>
-            
-        </h1>
-        <div class="content">
-            <h3 id="javascript基础面试题"><a href="#javascript基础面试题" class="headerlink" title="javascript基础面试题"></a>javascript基础面试题</h3><hr>
-        </div>
-        
-        
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2019/03/12/js%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98/#more">阅读更多</a>
-                </div>
-            </div>
-        </div>
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
 
 
 </div>
@@ -478,6 +374,34 @@
 </div>
     
         
+
+    <div class="card widget" id="toc">
+        <div class="card-content">
+            <div class="menu">
+                <h3 class="menu-label">
+                    目录
+                </h3>
+                <ul class="menu-list"><li>
+        <a class="is-flex" href="#css定位用法讲解">
+        <span class="has-mr-6">1</span>
+        <span>css定位用法讲解</span>
+        </a></li><li>
+        <a class="is-flex" href="#CSS-relative相对定位">
+        <span class="has-mr-6">2</span>
+        <span>CSS relative相对定位</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#CSS-相对定位">
+        <span class="has-mr-6">2.1</span>
+        <span>CSS 相对定位</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#css-position-绝对定位">
+        <span class="has-mr-6">3</span>
+        <span>css position 绝对定位</span>
+        </a></li></ul>
+            </div>
+        </div>
+    </div>
+
     
         <div class="card widget">
     <div class="card-content">
@@ -864,7 +788,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo2.png" alt="吴某的博客" height="28">
+                    <img src="/images/logo2.png" alt="div&amp;&amp;css相对定位和绝对定位用法讲解" height="28">
                 
                 </a>
                 <p class="is-size-7">
