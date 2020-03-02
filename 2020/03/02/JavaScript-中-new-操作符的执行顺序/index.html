@@ -7,25 +7,21 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>分类 - 吴某的博客</title>
+<title>JavaScript 中 new 操作符的执行顺序  - 吴某的博客</title>
 
 
-    <meta name="description" content="技术博客，java，前端">
-<meta property="og:type" content="website">
-<meta property="og:title" content="吴某的博客">
-<meta property="og:url" content="https://yoursite.com/categories/index.html">
+    <meta name="description" content="&amp;emsp;&amp;emsp;以前在学习 JavaScript 构造函数的时候，并没有深入地去研究 new 操作符究竟做了什么事情，也没有深入了解构造返回值的规则，本篇文章详细解释了这两个问题。 new 操作符做了什么？？？&amp;emsp;&amp;emsp;用 new 调用构造函数时 new 的操作顺序：  （一）创建一个新对象 X； （二）将新对象 X 的属性 proto 指向构造函数的 prototype">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JavaScript 中 new 操作符的执行顺序 ">
+<meta property="og:url" content="https://yoursite.com/2020/03/02/JavaScript-%E4%B8%AD-new-%E6%93%8D%E4%BD%9C%E7%AC%A6%E7%9A%84%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F/index.html">
 <meta property="og:site_name" content="吴某的博客">
-<meta property="og:description" content="技术博客，java，前端">
+<meta property="og:description" content="&amp;emsp;&amp;emsp;以前在学习 JavaScript 构造函数的时候，并没有深入地去研究 new 操作符究竟做了什么事情，也没有深入了解构造返回值的规则，本篇文章详细解释了这两个问题。 new 操作符做了什么？？？&amp;emsp;&amp;emsp;用 new 调用构造函数时 new 的操作顺序：  （一）创建一个新对象 X； （二）将新对象 X 的属性 proto 指向构造函数的 prototype">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://yoursite.com/images/og_image.png">
+<meta property="article:published_time" content="2020-03-02T13:02:17.000Z">
+<meta property="article:modified_time" content="2020-03-02T13:03:08.687Z">
 <meta property="article:author" content="wj">
-<meta property="article:tag" content="npm">
-<meta property="article:tag" content="ES6">
-<meta property="article:tag" content="css">
 <meta property="article:tag" content="js">
-<meta property="article:tag" content="面试题基础">
-<meta property="article:tag" content="vuex">
-<meta property="article:tag" content="面试题算法">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://yoursite.com/images/og_image.png">
 
@@ -33,7 +29,7 @@
 
 
 
-<link rel="alternative" href="/atom.xml" title="吴某的博客" type="application/atom+xml">
+<link rel="alternative" href="/atom.xml" title="JavaScript 中 new 操作符的执行顺序 " type="application/atom+xml">
 
 
 
@@ -88,7 +84,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo2.png" alt="吴某的博客" height="28">
+                <img src="/images/logo2.png" alt="JavaScript 中 new 操作符的执行顺序 " height="28">
             
             </a>
         </div>
@@ -102,7 +98,7 @@
                 <a class="navbar-item"
                 href="/archives">归档</a>
                 
-                <a class="navbar-item is-active"
+                <a class="navbar-item"
                 href="/categories">分类</a>
                 
                 <a class="navbar-item"
@@ -121,6 +117,10 @@
                     
                 
                 
+                <a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
                 
                 <a class="navbar-item search" title="搜索" href="javascript:;">
                     <i class="fas fa-search"></i>
@@ -135,66 +135,126 @@
         <div class="container">
             <div class="columns">
                 <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
-<div class="card widget">
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-03-02T13:02:17.000Z">2020-03-02</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/js/">js</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    3 分钟 读完 (大约 423 个字)
+                </span>
+                
+                
+                <span class="level-item has-text-grey" id="busuanzi_container_page_pv">
+                    <i class="far fa-eye"></i>
+                    <span id="busuanzi_value_page_pv">0</span>次访问
+                </span>
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                JavaScript 中 new 操作符的执行顺序 
+            
+        </h1>
+        <div class="content">
+            <a id="more"></a>
+
+<p>&emsp;&emsp;以前在学习 JavaScript 构造函数的时候，并没有深入地去研究 new 操作符究竟做了什么事情，也没有深入了解构造返回值的规则，本篇文章详细解释了这两个问题。</p>
+<h2 id="new-操作符做了什么？？？"><a href="#new-操作符做了什么？？？" class="headerlink" title="new 操作符做了什么？？？"></a><font style="color: #f00;">new 操作符做了什么？？？</font></h2><p>&emsp;&emsp;用 new 调用构造函数时 new 的操作顺序：</p>
+<ul>
+<li>（一）创建一个新对象 X；</li>
+<li>（二）将新对象 X 的属性 <strong>proto</strong> 指向构造函数的 prototype 指向的地方；</li>
+<li>（三）将构造函数中的 this 绑定为新对象 X；</li>
+<li>（四）执行构造函数中的代码，比如 this.a = ‘xx’ 等等；</li>
+<li>（五）判断构造函数中是否有 return 语句，没有的话就返回新对象 X，有的话先判断 return 后面的值是否为引用类型，是引用类型的话就返回该值，否则依然返回新对象 X。</li>
+</ul>
+<h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a><font style="color: #f00;">注意</font></h2><p>&emsp;&emsp;（一）对于构造函数，如果没有通过 new 去调用，那么实际该函数返回什么由函数中 return 的具体值决定，即有 return 语句的话 return 什么就返回什么，没有 return 语句的话就返回 undefined；</p>
+<p>&emsp;&emsp;（二）但是如果用 new 去调用构造函数，如果没有 return 语句，那就返回由 new 创建的那个对象，有 return 语句的话，先判断 return 后面的是不是引用类型的指，如果是引用类型的值，就返回该值，否则依然返回由 new 创建的那个对象。</p>
+
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/tags/js/" rel="tag">js</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+<div class="card">
     <div class="card-content">
-        <div class="menu">
-            <h3 class="menu-label">
-                分类
-            </h3>
-            <ul class="menu-list">
-            <li>
-        <a class="level is-marginless" href="/categories/ES6/">
-            <span class="level-start">
-                <span class="level-item">ES6</span>
-            </span>
-            <span class="level-end">
-                <span class="level-item tag">1</span>
-            </span>
-        </a></li><li>
-        <a class="level is-marginless" href="/categories/css/">
-            <span class="level-start">
-                <span class="level-item">css</span>
-            </span>
-            <span class="level-end">
-                <span class="level-item tag">1</span>
-            </span>
-        </a></li><li>
-        <a class="level is-marginless" href="/categories/js/">
-            <span class="level-start">
-                <span class="level-item">js</span>
-            </span>
-            <span class="level-end">
-                <span class="level-item tag">1</span>
-            </span>
-        </a></li><li>
-        <a class="level is-marginless" href="/categories/npm/">
-            <span class="level-start">
-                <span class="level-item">npm</span>
-            </span>
-            <span class="level-end">
-                <span class="level-item tag">1</span>
-            </span>
-        </a></li><li>
-        <a class="level is-marginless" href="/categories/vue/">
-            <span class="level-start">
-                <span class="level-item">vue</span>
-            </span>
-            <span class="level-end">
-                <span class="level-item tag">1</span>
-            </span>
-        </a></li><li>
-        <a class="level is-marginless" href="/categories/%E9%9D%A2%E8%AF%95/">
-            <span class="level-start">
-                <span class="level-item">面试</span>
-            </span>
-            <span class="level-end">
-                <span class="level-item tag">4</span>
-            </span>
-        </a></li>
-            </ul>
+        <h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3>
+        <div class="buttons is-centered">
+            
+                
+<a class="button is-info donate">
+    <span class="icon is-small">
+        <i class="fab fa-alipay"></i>
+    </span>
+    <span>支付宝</span>
+    <div class="qrcode"><img src="/images/WechatIMG2.jpeg" alt="支付宝"></div>
+</a>
+
+                
+                
+<a class="button is-success donate">
+    <span class="icon is-small">
+        <i class="fab fa-weixin"></i>
+    </span>
+    <span>微信</span>
+    <div class="qrcode"><img src="/images/WechatIMG1.jpeg" alt="微信"></div>
+</a>
+
+                
         </div>
     </div>
-</div></div>
+</div>
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/2020/03/02/vuex-%E7%AE%80%E5%8D%95%E8%AE%A4%E8%AF%86/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">vuex 简单认识</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/2020/02/27/div%E3%80%81css%E7%9B%B8%E5%AF%B9%E5%AE%9A%E4%BD%8D%E5%92%8C%E7%BB%9D%E5%AF%B9%E5%AE%9A%E4%BD%8D%E7%94%A8%E6%B3%95%E5%AE%9E%E4%BE%8B%E8%AF%A6%E8%A7%A3/">
+                <span class="level-item">div&amp;&amp;css相对定位和绝对定位用法讲解</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
                 
 
 
@@ -320,6 +380,26 @@
 </div>
     
         
+
+    <div class="card widget" id="toc">
+        <div class="card-content">
+            <div class="menu">
+                <h3 class="menu-label">
+                    目录
+                </h3>
+                <ul class="menu-list"><li>
+        <a class="is-flex" href="#new-操作符做了什么？？？">
+        <span class="has-mr-6">1</span>
+        <span>new 操作符做了什么？？？</span>
+        </a></li><li>
+        <a class="is-flex" href="#注意">
+        <span class="has-mr-6">2</span>
+        <span>注意</span>
+        </a></li></ul>
+            </div>
+        </div>
+    </div>
+
     
         <div class="card widget">
     <div class="card-content">
@@ -772,7 +852,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo2.png" alt="吴某的博客" height="28">
+                    <img src="/images/logo2.png" alt="JavaScript 中 new 操作符的执行顺序 " height="28">
                 
                 </a>
                 <p class="is-size-7">

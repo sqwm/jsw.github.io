@@ -136,6 +136,117 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-03-02T13:11:30.000Z">2020-03-02</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/vue/">vue</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    3 分钟 读完 (大约 447 个字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2020/03/02/vuex-%E7%AE%80%E5%8D%95%E8%AE%A4%E8%AF%86/">vuex 简单认识</a>
+            
+        </h1>
+        <div class="content">
+            <h3 id="vuex-知识复习梳理"><a href="#vuex-知识复习梳理" class="headerlink" title="vuex 知识复习梳理"></a>vuex 知识复习梳理</h3><hr>
+        </div>
+        
+        
+        <div class="level is-mobile">
+            <div class="level-start">
+                <div class="level-item">
+                <a class="button is-size-7 is-light" href="/2020/03/02/vuex-%E7%AE%80%E5%8D%95%E8%AE%A4%E8%AF%86/#more">阅读更多</a>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-03-02T13:02:17.000Z">2020-03-02</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/js/">js</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    3 分钟 读完 (大约 423 个字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2020/03/02/JavaScript-%E4%B8%AD-new-%E6%93%8D%E4%BD%9C%E7%AC%A6%E7%9A%84%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F/">JavaScript 中 new 操作符的执行顺序 </a>
+            
+        </h1>
+        <div class="content">
+            <a id="more"></a>
+
+<p>&emsp;&emsp;以前在学习 JavaScript 构造函数的时候，并没有深入地去研究 new 操作符究竟做了什么事情，也没有深入了解构造返回值的规则，本篇文章详细解释了这两个问题。</p>
+<h2 id="new-操作符做了什么？？？"><a href="#new-操作符做了什么？？？" class="headerlink" title="new 操作符做了什么？？？"></a><font style="color: #f00;">new 操作符做了什么？？？</font></h2><p>&emsp;&emsp;用 new 调用构造函数时 new 的操作顺序：</p>
+<ul>
+<li>（一）创建一个新对象 X；</li>
+<li>（二）将新对象 X 的属性 <strong>proto</strong> 指向构造函数的 prototype 指向的地方；</li>
+<li>（三）将构造函数中的 this 绑定为新对象 X；</li>
+<li>（四）执行构造函数中的代码，比如 this.a = ‘xx’ 等等；</li>
+<li>（五）判断构造函数中是否有 return 语句，没有的话就返回新对象 X，有的话先判断 return 后面的值是否为引用类型，是引用类型的话就返回该值，否则依然返回新对象 X。</li>
+</ul>
+<h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a><font style="color: #f00;">注意</font></h2><p>&emsp;&emsp;（一）对于构造函数，如果没有通过 new 去调用，那么实际该函数返回什么由函数中 return 的具体值决定，即有 return 语句的话 return 什么就返回什么，没有 return 语句的话就返回 undefined；</p>
+<p>&emsp;&emsp;（二）但是如果用 new 去调用构造函数，如果没有 return 语句，那就返回由 new 创建的那个对象，有 return 语句的话，先判断 return 后面的是不是引用类型的指，如果是引用类型的值，就返回该值，否则依然返回由 new 创建的那个对象。</p>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
                 <time class="level-item has-text-grey" datetime="2020-02-27T10:06:19.000Z">2020-02-27</time>
                 
                 <div class="level-item">
@@ -545,7 +656,7 @@
                     </p>
                     <a href="/archives">
                         <p class="title has-text-weight-normal">
-                            7
+                            9
                         </p>
                     </a>
                 </div>
@@ -557,7 +668,7 @@
                     </p>
                     <a href="/categories">
                         <p class="title has-text-weight-normal">
-                            4
+                            6
                         </p>
                     </a>
                 </div>
@@ -569,7 +680,7 @@
                     </p>
                     <a href="/tags">
                         <p class="title has-text-weight-normal">
-                            5
+                            7
                         </p>
                     </a>
                 </div>
@@ -677,9 +788,25 @@
                 <span class="level-item tag">1</span>
             </span>
         </a></li><li>
+        <a class="level is-marginless" href="/categories/js/">
+            <span class="level-start">
+                <span class="level-item">js</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li><li>
         <a class="level is-marginless" href="/categories/npm/">
             <span class="level-start">
                 <span class="level-item">npm</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/vue/">
+            <span class="level-start">
+                <span class="level-item">vue</span>
             </span>
             <span class="level-end">
                 <span class="level-item tag">1</span>
@@ -703,6 +830,44 @@
         <h3 class="menu-label">
             最新文章
         </h3>
+        
+        <article class="media">
+            
+            <a href="/2020/03/02/vuex-%E7%AE%80%E5%8D%95%E8%AE%A4%E8%AF%86/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="vuex 简单认识">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-02T13:11:30.000Z">2020-03-02</time></div>
+                    <a href="/2020/03/02/vuex-%E7%AE%80%E5%8D%95%E8%AE%A4%E8%AF%86/" class="title has-link-black-ter is-size-6 has-text-weight-normal">vuex 简单认识</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/vue/">vue</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2020/03/02/JavaScript-%E4%B8%AD-new-%E6%93%8D%E4%BD%9C%E7%AC%A6%E7%9A%84%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="JavaScript 中 new 操作符的执行顺序 ">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-02T13:02:17.000Z">2020-03-02</time></div>
+                    <a href="/2020/03/02/JavaScript-%E4%B8%AD-new-%E6%93%8D%E4%BD%9C%E7%AC%A6%E7%9A%84%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F/" class="title has-link-black-ter is-size-6 has-text-weight-normal">JavaScript 中 new 操作符的执行顺序 </a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/js/">js</a>
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -761,44 +926,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2020/02/25/js%E7%BC%96%E7%A8%8B%E9%83%A8%E5%88%86%E9%9D%A2%E8%AF%95%E9%A2%98/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="js编程部分面试题">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-02-25T11:52:42.000Z">2020-02-25</time></div>
-                    <a href="/2020/02/25/js%E7%BC%96%E7%A8%8B%E9%83%A8%E5%88%86%E9%9D%A2%E8%AF%95%E9%A2%98/" class="title has-link-black-ter is-size-6 has-text-weight-normal">js编程部分面试题</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/%E9%9D%A2%E8%AF%95/">面试</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2020/02/25/js%E7%BC%96%E7%A8%8B%E9%83%A8%E5%88%86%E9%9D%A2%E8%AF%95%E9%A2%982/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="js编程部分面试题2">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-02-25T11:52:42.000Z">2020-02-25</time></div>
-                    <a href="/2020/02/25/js%E7%BC%96%E7%A8%8B%E9%83%A8%E5%88%86%E9%9D%A2%E8%AF%95%E9%A2%982/" class="title has-link-black-ter is-size-6 has-text-weight-normal">js编程部分面试题2</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/%E9%9D%A2%E8%AF%95/">面试</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
     
@@ -810,7 +937,7 @@
         <h3 class="menu-label">
             标签云
         </h3>
-        <a href="/tags/ES6/" style="font-size: 10px;">ES6</a> <a href="/tags/css/" style="font-size: 10px;">css</a> <a href="/tags/npm/" style="font-size: 10px;">npm</a> <a href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98%E5%9F%BA%E7%A1%80/" style="font-size: 20px;">面试题基础</a> <a href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%AE%97%E6%B3%95/" style="font-size: 20px;">面试题算法</a>
+        <a href="/tags/ES6/" style="font-size: 10px;">ES6</a> <a href="/tags/css/" style="font-size: 10px;">css</a> <a href="/tags/js/" style="font-size: 10px;">js</a> <a href="/tags/npm/" style="font-size: 10px;">npm</a> <a href="/tags/vuex/" style="font-size: 10px;">vuex</a> <a href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98%E5%9F%BA%E7%A1%80/" style="font-size: 20px;">面试题基础</a> <a href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%AE%97%E6%B3%95/" style="font-size: 20px;">面试题算法</a>
     </div>
 </div>
         
@@ -821,6 +948,17 @@
             归档
         </h3>
         <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2020/03/">
+                <span class="level-start">
+                    <span class="level-item">三月 2020</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">2</span>
+                </span>
+            </a>
+        </li>
         
         <li>
             <a class="level is-marginless" href="/archives/2020/02/">
@@ -872,8 +1010,22 @@
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/tags/js/">
+                        <span class="tag">js</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/tags/npm/">
                         <span class="tag">npm</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/vuex/">
+                        <span class="tag">vuex</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
@@ -913,7 +1065,7 @@
         <h3 class="menu-label">
             标签云
         </h3>
-        <a href="/tags/ES6/" style="font-size: 10px;">ES6</a> <a href="/tags/css/" style="font-size: 10px;">css</a> <a href="/tags/npm/" style="font-size: 10px;">npm</a> <a href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98%E5%9F%BA%E7%A1%80/" style="font-size: 20px;">面试题基础</a> <a href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%AE%97%E6%B3%95/" style="font-size: 20px;">面试题算法</a>
+        <a href="/tags/ES6/" style="font-size: 10px;">ES6</a> <a href="/tags/css/" style="font-size: 10px;">css</a> <a href="/tags/js/" style="font-size: 10px;">js</a> <a href="/tags/npm/" style="font-size: 10px;">npm</a> <a href="/tags/vuex/" style="font-size: 10px;">vuex</a> <a href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98%E5%9F%BA%E7%A1%80/" style="font-size: 20px;">面试题基础</a> <a href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%AE%97%E6%B3%95/" style="font-size: 20px;">面试题算法</a>
     </div>
 </div>
     
@@ -924,6 +1076,17 @@
             归档
         </h3>
         <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2020/03/">
+                <span class="level-start">
+                    <span class="level-item">三月 2020</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">2</span>
+                </span>
+            </a>
+        </li>
         
         <li>
             <a class="level is-marginless" href="/archives/2020/02/">
@@ -975,8 +1138,22 @@
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/tags/js/">
+                        <span class="tag">js</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/tags/npm/">
                         <span class="tag">npm</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/vuex/">
+                        <span class="tag">vuex</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
