@@ -1,0 +1,1412 @@
+<!DOCTYPE html>
+<html  lang="zh">
+<head>
+    <meta charset="utf-8" />
+
+<meta name="generator" content="Hexo 4.2.0" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+<title>html-标签图文详解 - 吴某的博客</title>
+
+
+    <meta name="description" content="本文主要内容 头标签 排版标签：&lt;p&gt;、 &lt;div&gt;、 &lt;span&gt;、&lt;br&gt; 、 &lt;hr&gt; 、 &lt;center&gt; 、 &lt;pre&gt; 字体标记：&lt;h1&gt;、 &lt;font&gt;、 &lt;b&gt;、 &lt;u&gt; 、&lt;sup&gt; 、&lt;sub&gt; 超链接 &lt;a&gt;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="html-标签图文详解">
+<meta property="og:url" content="https://yoursite.com/2020/03/03/html/html-%E6%A0%87%E7%AD%BE%E5%9B%BE%E6%96%87%E8%AF%A6%E8%A7%A3/index.html">
+<meta property="og:site_name" content="吴某的博客">
+<meta property="og:description" content="本文主要内容 头标签 排版标签：&lt;p&gt;、 &lt;div&gt;、 &lt;span&gt;、&lt;br&gt; 、 &lt;hr&gt; 、 &lt;center&gt; 、 &lt;pre&gt; 字体标记：&lt;h1&gt;、 &lt;font&gt;、 &lt;b&gt;、 &lt;u&gt; 、&lt;sup&gt; 、&lt;sub&gt; 超链接 &lt;a&gt;">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://yoursite.com/images/og_image.png">
+<meta property="article:published_time" content="2020-03-03T04:19:24.000Z">
+<meta property="article:modified_time" content="2020-03-08T05:15:03.463Z">
+<meta property="article:author" content="wj">
+<meta property="article:tag" content="html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://yoursite.com/images/og_image.png">
+
+
+
+
+
+<link rel="alternative" href="/atom.xml" title="html-标签图文详解" type="application/atom+xml">
+
+
+
+<link rel="icon" href="/images/logo2.png">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css">
+
+
+    
+    
+<style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+
+    
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+
+    
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+    
+    
+    
+    
+<link rel="stylesheet" href="/css/back-to-top.css">
+
+    
+    
+    
+    
+    
+    
+    
+    <link rel="stylesheet" href="/css/progressbar.css">
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+    
+    <script async="" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+
+
+<link rel="stylesheet" href="/css/style.css">
+    <script data-ad-client="ca-pub-7431034624069492" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body class="is-3-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/">
+            
+                <img src="/images/logo2.png" alt="html-标签图文详解" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item"
+                href="/">主页</a>
+                
+                <a class="navbar-item"
+                href="/archives">归档</a>
+                
+                <a class="navbar-item"
+                href="/categories">分类</a>
+                
+                <a class="navbar-item"
+                href="/tags">标签</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                    
+                    <a class="navbar-item" target="_blank" rel="noopener" title="MY GitHub" href="https://github.com/sqwm">
+                        
+                        <i class="fab fa-github"></i>
+                        
+                    </a>
+                    
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="搜索" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-03-03T04:19:24.000Z">2020-03-03</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    33 分钟 读完 (大约 4966 个字)
+                </span>
+                
+                
+                <span class="level-item has-text-grey" id="busuanzi_container_page_pv">
+                    <i class="far fa-eye"></i>
+                    <span id="busuanzi_value_page_pv">0</span>次访问
+                </span>
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                html-标签图文详解
+            
+        </h1>
+        <div class="content">
+            <h2 id="本文主要内容"><a href="#本文主要内容" class="headerlink" title="本文主要内容"></a>本文主要内容</h2><ul>
+<li>头标签</li>
+<li>排版标签：<code>&lt;p&gt;</code>、 <code>&lt;div&gt;</code>、 <code>&lt;span&gt;</code>、<code>&lt;br&gt;</code> 、 <code>&lt;hr&gt;</code> 、 <code>&lt;center&gt;</code> 、 <code>&lt;pre&gt;</code></li>
+<li>字体标记：<code>&lt;h1&gt;</code>、 <code>&lt;font&gt;</code>、 <code>&lt;b&gt;</code>、 <code>&lt;u&gt;</code> 、<code>&lt;sup&gt;</code> 、<code>&lt;sub&gt;</code></li>
+<li>超链接 <code>&lt;a&gt;</code></li>
+<li>图片标签 <code>&lt;img&gt;</code></li>
+</ul>
+<hr>
+<a id="more"></a>
+
+
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>来自 <a href="https://github.com/qianguyihao/Web">https://github.com/qianguyihao/Web</a></p>
+<h3 id="web标准"><a href="#web标准" class="headerlink" title="web标准"></a>web标准</h3><p>web标准介绍：</p>
+<ul>
+<li>w3c：万维网联盟组织，用来制定web标准的机构（组织）</li>
+<li>web标准：制作网页要遵循的规范。</li>
+<li>web标准规范的分类：结构标准、表现标准、行为标准。</li>
+<li>结构：html。表现：css。行为：JavaScript。</li>
+</ul>
+<p><strong>Web 前端分三层</strong>：</p>
+<ul>
+<li>HTML：HyperText Markup Language（超文本标记语言）。从<strong>语义</strong>的角度描述页面的<strong>结构</strong>。相当于人的身体结构。</li>
+<li>CSS：Cascading Style Sheets（层叠样式表）。从<strong>审美</strong>的角度美化页面的<strong>样式</strong>。相当于人的衣服。</li>
+<li>JS：JavaScript。从<strong>交互</strong>的角度描述页面的<strong>行为</strong>。相当于人的动作，让人有生命力。</li>
+</ul>
+<h2 id="编辑器相关"><a href="#编辑器相关" class="headerlink" title="编辑器相关"></a>编辑器相关</h2><h3 id="VS-Code-的使用"><a href="#VS-Code-的使用" class="headerlink" title="VS Code 的使用"></a>VS Code 的使用</h3><p>详情请移步至：<a href="https://github.com/qianguyihao/Web/blob/master/00-%E5%89%8D%E7%AB%AF%E5%B7%A5%E5%85%B7/01-VS%20Code%E7%9A%84%E4%BD%BF%E7%94%A8.md">第一次使用VS Code时你应该知道的一切配置</a></p>
+<h3 id="Sublime-Text-的使用"><a href="#Sublime-Text-的使用" class="headerlink" title="Sublime Text 的使用"></a>Sublime Text 的使用</h3><p>详情请移步至：<a href="https://github.com/qianguyihao/Tools/blob/master/01-%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/02-Sublime%20Text%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7.md">Sublime Text使用技巧</a></p>
+<h2 id="一、HTML的介绍"><a href="#一、HTML的介绍" class="headerlink" title="一、HTML的介绍"></a>一、HTML的介绍</h2><h3 id="1、HTML的概述："><a href="#1、HTML的概述：" class="headerlink" title="1、HTML的概述："></a>1、HTML的概述：</h3><p><strong>html</strong>全称为HyperText Markup Language，译为<font color=#0000ff><strong>超文本标记语言</strong></font>，不是一种编程语言，是一种描述性的标记语言，用于描述超文本中内容的显示方式。比如字体什么颜色，大小等。</p>
+<ul>
+<li>超文本：音频，视频，图片称为超文本。</li>
+<li>标记 ：&lt;英文单词或者字母&gt;称为标记，一个HTML页面都是由各种标记组成。</li>
+</ul>
+<p><strong>作用</strong>：HTML是负责描述文档<strong>语义</strong>的语言。</p>
+<p><strong>注意</strong>：HTML语言不是一个编程语言(有编译过程)，而是一个<strong>标记语言</strong>(<font color=#0000ff><strong>没有编译过程</strong></font>)，HTML页面直接由浏览器解析执行。</p>
+<h4 id="HTML是负责描述文档语义的语言"><a href="#HTML是负责描述文档语义的语言" class="headerlink" title="HTML是负责描述文档语义的语言"></a>HTML是负责描述文档语义的语言</h4><p>html中，除了<strong>语义</strong>，其他什么都没有。</p>
+<p>html是一个纯本文文件（就是用txt文件改名而成），用一些标签来描述文字的语义，这些标签在浏览器里面是看不到的，所以称为“超文本”，所以就是“超文本标记语言”了。<br>所以，接下来，我们肯定要学习一堆html中的标签对儿，这些标签对儿能够给文本不同的语义。</p>
+<p>比如，面试的时候问你，h1标签有什么作用？</p>
+<ul>
+<li>正确答案：给文本增加主标题的语义。</li>
+<li>错误答案：给文字加粗、加黑、变大。</li>
+</ul>
+<h3 id="2、HTML的历史"><a href="#2、HTML的历史" class="headerlink" title="2、HTML的历史"></a>2、HTML的历史</h3><p><img src="/images/html/20151001_1001.png" alt="html中标签发展趋势"></p>
+<p>我们专门来对XHTML做一个介绍。</p>
+<p><strong>XHTML介绍：</strong><br>XHTML：Extensible Hypertext Markup Language，可扩展超文本标注语言。<br>XHTML的主要目的是为了<font color="blue"><strong>取代HTML</strong></font>，也可以理解为HTML的升级版。<br>HTML的标记书写很不规范，会造成其它的设备(ipad、手机、电视等)无法正常显示。<br>XHTML与HTML4.0的标记基本上一样。<br>XHTML是<font color="blue"><strong>严格的、纯净的</strong></font>HTML。</p>
+<p>我们稍后将对XHTML的编写规范进行介绍。</p>
+<h3 id="3、HTML的网络术语"><a href="#3、HTML的网络术语" class="headerlink" title="3、HTML的网络术语"></a>3、HTML的网络术语</h3><ul>
+<li>网页 ：由各种标记组成的一个页面就叫网页。</li>
+<li>主页(首页) : 一个网站的起始页面或者导航页面。</li>
+<li>标记：  <code>&lt;p&gt;</code>称为开始标记 ，<code>&lt;/p&gt;</code>称为结束标记，也叫标签。每个标签都规定好了特殊的含义。</li>
+<li>元素：<code>&lt;p&gt;内容&lt;/p&gt;</code>称为元素.</li>
+<li>属性：给每一个标签所做的辅助信息。</li>
+<li>xhtml： 符合XML语法标准的HTML。</li>
+<li>dhtml：dynamic，动态的。<code>javascript + css + html</code>合起来的页面就是一个dhtml。</li>
+<li>http：超文本传输协议。用来规定客户端浏览器和服务端交互时数据的一个格式。SMTP：邮件传输协议，ftp：文件传输协议。</li>
+</ul>
+<h3 id="4、HTML的编辑工具"><a href="#4、HTML的编辑工具" class="headerlink" title="4、HTML的编辑工具"></a>4、HTML的编辑工具</h3><blockquote>
+<p>用的最多的编辑器是： VS Code 和 Sublime Text。</p>
+</blockquote>
+<ul>
+<li>VS Code：最火的前端代码编辑器。</li>
+<li>Sublime Text：很轻量的代码编辑器。</li>
+<li>NotePad：记事本。</li>
+<li>EditPlus：语法高亮显示。技巧： 根据颜色判断单词是否出错 （不是100%）。不好的地方：没有代码提示。</li>
+<li>UltraEdit：根据颜色判断单词是否出错，可以显示2进制数据。</li>
+<li>dw(dreamweaver，专业工具) ：建立WEB站点和应用程序的专业工具。它将布局功能、开发工具、代码编辑组合在一起。有代码提示。</li>
+</ul>
+<p>PS：后缀名不能决定文件格式，只能决定打开文件打开的方式。</p>
+<h3 id="5、计算机编码介绍"><a href="#5、计算机编码介绍" class="headerlink" title="5、计算机编码介绍"></a>5、计算机编码介绍</h3><p>计算机，不能直接存储文字，存储的是编码。</p>
+<p>计算机只能处理二进制的数据，其它数据，比如：0-9、a-z、A-Z，这些字符，我们定义一套规则来表示。假如：A用110表示，B用111表示等。</p>
+<p><strong>ASCII码：</strong><br>美国发布的，用1个字节(8位二进制)来表示一个字符，共可以表示2^8=256个字符。<br>    美国的国家语言是英语，只要能表示0-9、a-z、A-Z、特殊符号。</p>
+<p><strong>ANSI编码：</strong><br><strong>每个国家为了显示本国的语言，都对ASCII码进行了扩展</strong>。用2个字节(16位二进制)来表示一个汉字，共可以表示2^16＝65536个汉字。例如：<br>中国的ANSI编码是GB2312编码(简体)，对6763汉字进行编码，含600多特殊字符。另外还有GBK(简体)。<br>日本的ANSI编码是JIS编码。<br>台湾的ANSI编码是BIG5编码（繁体）。</p>
+<p><strong>GBK：</strong><br>对GB2312进行了扩展，用来显示罕见的、古汉语的汉字。现在已经收录了2.1万左右。并提供了1890个汉字码位。K的含义就是“扩展”。</p>
+<p><strong>Unicode编码(统一编码)：</strong><br>用4个字节(32位二进制)来表示一个字符，想法不错，但效率太低。例如，字母A用ASCII表示的话一个字节就够，可用Unicode编码的话，得用4个字节表示，造成了空间的极大浪费。A的Unicode编码是0000 0000 0000 0000 0000 0000 0100 0000</p>
+<p><strong>UTF-8(Unicode Transform Format)编码：</strong><br>根据字符的不同，选择其编码的长度。比如：一个字符A用1个字节表示，一个汉字用2个字节表示。</p>
+<p>毫无疑问，开发中，都用<strong>UTF-8</strong>编码吧，准没错。</p>
+<p><strong>中文能够使用的字符集两种：</strong></p>
+<ul>
+<li><p>第一种：UTF-8。UTF-8是国际通用字库，里面涵盖了所有地球上所有人类的语言文字，比如阿拉伯文、汉语、鸟语……</p>
+</li>
+<li><p>第二种：GBK（对GB2312进行了扩展）。gb2312 是国标，是中国的字库，里面<strong>仅</strong>涵盖了汉字和一些常用外文，比如日文片假名，和常见的符号。</p>
+</li>
+</ul>
+<p>字库规模：  UTF-8（字全） &gt; gb2312（只有汉字）</p>
+<p><strong>重点1：避免乱码</strong></p>
+<p>我们用meta标签声明的当前这个html文档的字库，一定要和保存的文件编码类型一样，否则乱码！（重点）。</p>
+<p>当我们不设置的时候，sublime默认类型就是UTF-8。而一旦更改为gb2312的时候，就一定要记得设置一下sublime的保存类型： <code>文件→ set File Encoding to → Chinese Simplified(GBK)</code>。</p>
+<p><strong>重点2：UTF-8和gb2312的比较</strong></p>
+<p>保存大小：UTF-8（更臃肿、加载更慢） &gt; gb2312 （更小巧，加载更快）</p>
+<p>总结：</p>
+<ul>
+<li>UTF-8：字多，有各种国家的语言，但是保存尺寸大，文件臃肿；</li>
+<li>gb2312：字少，只用中文和少数外语和符号，但是尺寸小，文件小巧。</li>
+</ul>
+<p>列出2个使用情形：</p>
+<p>1） 你们公司是做日本动漫的，经常出现一些日语动漫的名字，网页要使用UTF-8。如果用gb2312将无法显示日语。<br>2） 你们公司就是中文网页，极度的追求网页的显示速度，要使用gb2312。如果使用UTF-8将每个汉字多一个byte，所以5000个汉字，多5kb。</p>
+<p>我们亲测：</p>
+<ul>
+<li>qq网、网易、搜狐都是使用gb2312。这些公司，都追求显示速度。</li>
+<li>新华网藏语频道，使用的是UTF-8，保证字符集的数量。</li>
+</ul>
+<p>我们是怎么查看网页的编码方式的呢？在浏览器中打开网页，右键，选择“查看网页源代码”，找到meta标签中的charset属性即可。</p>
+<p>那么，我们为什么可以查看网页的源代码呢？因为这个打开的网页已经存到我的临时文件夹里了，临时文件夹里的html是纯文本文件，纯文本文件自然可以查看网页的源代码了。</p>
+<h3 id="6、HTML颜色介绍"><a href="#6、HTML颜色介绍" class="headerlink" title="6、HTML颜色介绍"></a>6、HTML颜色介绍</h3><p><strong>颜色表示：</strong></p>
+<ul>
+<li>纯单词表示：red、green、blue、orange、gray等</li>
+<li>10进制表示：rgb(255,0,0)</li>
+<li>16进制表示：#FF0000、#0000FF、#00FF00等</li>
+</ul>
+<p><strong>RGB色彩模式：</strong></p>
+<ul>
+<li>自然界中所有的颜色都可以用红、绿、蓝(RGB)这三种颜色波长的不同强度组合而得，这就是人们常说的三原色原理。</li>
+<li>RGB三原色也叫加色模式，这是因为当我们把不同光的波长加到一起的时候，可以得到不同的混合色。例：红+绿=黄色，红+蓝＝紫色，绿+蓝=青</li>
+<li>在数字视频中，对RGB三基色各进行8位编码就构成了大约1678万种颜色，这就是我们常说的真彩色。所有显示设备都采用的是RGB色彩模式。</li>
+<li>RGB各有256级(0-255)亮度，256级的RGB色彩总共能组合出约1678万种色彩，即256×256×256=16777216。</li>
+</ul>
+<h2 id="二、HTML的规范"><a href="#二、HTML的规范" class="headerlink" title="二、HTML的规范"></a>二、HTML的规范</h2><ul>
+<li>HTML是一个弱势语言</li>
+<li>HTML不区分大小写</li>
+<li>HTML页面的后缀名是html或者htm(有一些系统不支持后缀名长度超过3个字符，比如dos系统)</li>
+<li>HTML的结构：<ul>
+<li>声明部分：主要作用是用来告诉浏览器这个页面使用的是哪个标准。<!doctype html>是HTML5标准。</li>
+<li>head部分：将页面的一些额外信息告诉服务器。不会显示在页面上。</li>
+<li>body部分：我们所写的代码必须放在此标签內。</li>
+</ul>
+</li>
+</ul>
+<p>目前，IE浏览器是完全不支持H5的，支持最好的是Opera浏览器，可以支持95%以上；其次是google，可以支持一部分H5。</p>
+<h3 id="1、编写XHTML的规范："><a href="#1、编写XHTML的规范：" class="headerlink" title="1、编写XHTML的规范："></a>1、编写XHTML的规范：</h3><p>（1）所有标记元素都要正确的嵌套，不能交叉嵌套。正确写法举例：<code>&lt;h1&gt;&lt;font&gt;&lt;/font&gt;&lt;/h1&gt;</code></p>
+<p>（2）所有的标记都必须小写。</p>
+<p>（3）所有的标记都必须关闭。</p>
+<ul>
+<li>双边标记：<code>&lt;span&gt;&lt;/span&gt;</code></li>
+<li>单边标记：<code>&lt;br&gt;</code> 转成 <code>&lt;br /&gt;</code>   <code>&lt;hr&gt;</code> 转成 <code>&lt;hr /&gt;</code>，还有<code>&lt;img src=“URL” /&gt;</code></li>
+</ul>
+<p>（4）所有的属性值必须加引号。<code>&lt;font  color=&quot;red&quot;&gt;&lt;/font&gt;</code></p>
+<p>（5）所有的属性必须有值。<code>&lt;hr noshade=&quot;noshade&quot;&gt;</code>、<code>&lt;input  type=&quot;radio&quot; checked=&quot;checked&quot; /&gt;</code></p>
+<p>（6）XHTML文档开头必须要有DTD文档类型定义</p>
+<h3 id="2、HTML的基本语法特性"><a href="#2、HTML的基本语法特性" class="headerlink" title="2、HTML的基本语法特性"></a>2、HTML的基本语法特性</h3><h4 id="（1）HTML对换行不敏感，对tab不敏感"><a href="#（1）HTML对换行不敏感，对tab不敏感" class="headerlink" title="（1）HTML对换行不敏感，对tab不敏感"></a>（1）HTML对换行不敏感，对tab不敏感</h4><p>HTML只在乎标签的嵌套结构，嵌套的关系。谁嵌套了谁，谁被谁嵌套了，和换行、tab无关。换不换行、tab不tab，都不影响页面的结构。</p>
+<p>也就是说，HTML不是依靠缩进来表示嵌套的，就是看标签的包裹关系。但是，我们发现有良好的缩进，代码更易读。要求大家都正确缩进标签。</p>
+<p>百度为了追求极致的显示速度，所以HTML标签都没有换行、都没有缩进（tab），HTML和换不换行无关，标签的层次依然清晰，只不过程序员不可读了。如下图所示：</p>
+<p><img src="/images/html/20170629_2226.png" alt=""></p>
+<h4 id="（2）空白折叠现象"><a href="#（2）空白折叠现象" class="headerlink" title="（2）空白折叠现象"></a>（2）空白折叠现象</h4><p>HTML中所有的<strong>文字之间</strong>，如果有空格、换行、tab都将被折叠为一个空格显示。</p>
+<p>举例如下：</p>
+<p><img src="/images/html/20170629_2230.jpg" alt=""></p>
+<h4 id="（3）标签要严格封闭"><a href="#（3）标签要严格封闭" class="headerlink" title="（3）标签要严格封闭"></a>（3）标签要严格封闭</h4><p>标签不封闭是灾难性的。</p>
+<p>标签不封闭的举例如下：</p>
+<p><img src="/images/html/20170629_2245.jpg" alt=""></p>
+<h2 id="三、HTML结构详解"><a href="#三、HTML结构详解" class="headerlink" title="三、HTML结构详解"></a>三、HTML结构详解</h2><blockquote>
+<p>备注：</p>
+<ul>
+<li>所有的浏览器默认情况下都会忽略空格和空行</li>
+<li>每个标签都有私有属性。也都有公有属性。</li>
+<li>html中表示长度的单位都是<strong>像素</strong>。HTML只有一种单位就是像素。</li>
+</ul>
+</blockquote>
+<p>HTML标签通常是成对出现的（<font color="blue"><strong>双边标记</strong></font>），比如 <code>&lt;div&gt;</code> 和 <code>&lt;/div&gt;</code>，也有单独呈现的标签（<font color="blue"><strong>单边标记</strong></font>），如：<code>&lt;br /&gt;</code>、<code>&lt;hr /&gt;</code>和<code>&lt;img src=&quot;images/1.jpg&quot; /&gt;</code>等。</p>
+<p>属性与标记之间、各属性之间需要以空格隔开。属性值以双引号括起来。</p>
+<h3 id="快速生成-html-的骨架"><a href="#快速生成-html-的骨架" class="headerlink" title="快速生成 html 的骨架"></a>快速生成 html 的骨架</h3><p><strong>方式1</strong>：在 VS Code 中新建 html 文件，输入<code>html:5</code>，按 <code>Tab</code>键后，自动生成的代码如下：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1.0"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"Content-Type"</span> <span class="attr">content</span>=<span class="string">"text/html;charset=UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>方式2</strong>：在Sublime Text中安装<code>Emmet</code>插件。新建html文件，输入<code>html:5</code>，按<code>Tab</code>键后，自动生成的代码如下：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>方式3</strong>：在Sublime Text中安装<code>Emmet</code>插件。新建html文件，输入<code>html:xt</code>，按<code>Tab</code>键后（或者按Ctrl+E），自动生成的代码如下：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span> <span class="meta-keyword">PUBLIC</span> <span class="meta-string">"-//W3C//DTD XHTML 1.0 Transitional//EN"</span> <span class="meta-string">"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">xmlns</span>=<span class="string">"http://www.w3.org/1999/xhtml"</span> <span class="attr">xml:lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"Content-Type"</span> <span class="attr">content</span>=<span class="string">"text/html;charset=UTF-8"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>上面的方式2和方式3中，我们会发现，第一行的内容有些不太一样，这就是我们接下来要讲的<strong>文档声明头</strong>。</p>
+<h3 id="1、文档声明头"><a href="#1、文档声明头" class="headerlink" title="1、文档声明头"></a>1、文档声明头</h3><p>任何一个标准的HTML页面，第一行一定是一个以<code>&lt;!DOCTYPE ……&gt;</code>开头的语句。</p>
+<p>这一行，就是文档声明头，DocType Declaration，简称DTD。此标签可告知浏览器文档使用哪种 HTML 或 XHTML 规范。</p>
+<h4 id="HTML4-01有哪些规范呢？"><a href="#HTML4-01有哪些规范呢？" class="headerlink" title="HTML4.01有哪些规范呢？"></a>HTML4.01有哪些规范呢？</h4><p><strong>HTML4.01</strong>这个版本是IE6开始兼容的。<strong>HTML5是IE9开开始兼容的</strong>。如今，手机、移动端的网页，就可以使用HTML5了，因为其兼容性更高。</p>
+<p>说个题外话，html1 至 html3 是美国军方以及高等研究所用的，并未对外公开。</p>
+<p>HTML4.01里面有两大种规范，每大种规范里面又各有3种小规范。所以一共6种规范（见下图）。</p>
+<p>HTML4.01里面规定了<strong>普通</strong>和<strong>XHTML</strong>两大种规范。HTML觉得自己有一些规定不严谨，比如，标签是否可以用大写字母呢？<code>&lt;H1&gt;&lt;/H1&gt;</code>所以，HTML就觉得，把一些规范严格的标准，又制定了一个XHTML1.0。在XHTML中的字母X，表示“严格的”。</p>
+<p>总结一下，HTML4.01一共有6种DTD。说白了，HTML的第一行语句一共有6种情况：</p>
+<p><img src="/images/html/20170629_1600.png" alt=""></p>
+<p>下面对上图中的三种小规范进行解释：</p>
+<ul>
+<li><p><strong>strict</strong>：表示“严格的”，这种模式里面的要求更为严格。这种严格体现在哪里？有一些标签不能使用。<br>比如，u标签，就是给一个本文加下划线，但是这和HTML的本质有冲突，因为HTML只能负责语义，不能负责样式，而u这个下划线是样式。所以，在strict中是不能使用u标签的。<br>那怎么给文本增加下划线呢？今后的css将使用css属性来解决。<br>那么，XHTML1.0更为严格，因为这个体系本身规定比如标签必须是小写字母、必须严格闭合标签、必须使用引号引起属性等等。</p>
+</li>
+<li><p><strong>Transitional</strong>：表示“普通的”，这种模式就是没有一些别的规范。</p>
+</li>
+<li><p><strong>Frameset</strong>：表示“框架”，在框架的页面使用。</p>
+</li>
+</ul>
+<p>在sublime输入的html:xt，x表示XHTML，t表示transitional。</p>
+<p>在HTML5中极大的简化了DTD，也就是说HTML5中就没有XHTML了（W3C自己打脸了）：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="2、头标签"><a href="#2、头标签" class="headerlink" title="2、头标签"></a>2、头标签</h3><h4 id="html5-的比较完整的骨架："><a href="#html5-的比较完整的骨架：" class="headerlink" title="html5 的比较完整的骨架："></a>html5 的比较完整的骨架：</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1.0"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"Content-Type"</span> <span class="attr">content</span>=<span class="string">"text/html;charset=UTF-8"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"Author"</span> <span class="attr">content</span>=<span class="string">""</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"Keywords"</span> <span class="attr">content</span>=<span class="string">"牛逼，很牛逼，特别牛逼"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"Description"</span> <span class="attr">content</span>=<span class="string">"网易是中国领先的互联网技术公司，为用户提供免费邮箱、游戏、搜索引擎服务，开设新闻、娱乐、体育等30多个内容频道，及博客、视频、论坛等互动交流，网聚人的力量。"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>面试题：</p>
+<ul>
+<li>问：网页的head标签里面，表示的是页面的配置，有什么配置？</li>
+<li>答：字符集、关键词、页面描述、页面标题、IE适配、视口、iPhone小图标等等。</li>
+</ul>
+<p>头标签都放在<head></head>头部分之间。包括：<code>&lt;title&gt;</code>、<code>&lt;base&gt;</code>、<code>&lt;meta&gt;</code>、<code>&lt;link&gt;</code></p>
+<ul>
+<li><code>&lt;title&gt;</code>：指定整个网页的标题，在浏览器最上方显示。</li>
+<li><code>&lt;base&gt;</code>：为页面上的所有链接规定默认地址或默认目标。</li>
+<li><code>&lt;meta&gt;</code>：提供有关页面的基本信息</li>
+<li><code>&lt;body&gt;</code>：用于定义HTML文档所要显示的内容，也称为主体标签。我们所写的代码必须放在此标签內。</li>
+<li><code>&lt;link&gt;</code>：定义文档与外部资源的关系。</li>
+</ul>
+<p><strong>meta 标签</strong>：</p>
+<p>上面的<code>&lt;meta&gt;</code>标签都不用记，但是另外还有一个<code>&lt;meta&gt;</code>标签是需要记住的：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"refresh"</span> <span class="attr">content</span>=<span class="string">"3;http://www.baidu.com"</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>上面这个标签的意思是说，3秒之后，自动跳转到百度页面。</p>
+<p>常见的几种 meta 标签如下：</p>
+<p>（1）字符集 charset：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"Content-Type"</span> <span class="attr">content</span>=<span class="string">"text/html;charset=UTF-8"</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>字符集用meta标签中的<code>charset</code>定义，meta表示“元”。“元”配置，就是表示基本的配置项目。</p>
+<p>charset就是charactor set（即“字符集”）。</p>
+<p>浏览器就是通过meta来看网页是什么字符集的。比如你保存的时候，meta写的和声明的不匹配，那么浏览器就是乱码。</p>
+<p>（2）视口 viewport：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1.0"</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><code>width=device-width</code> ：表示视口宽度等于屏幕宽度。</p>
+<p>viewport 这个知识点，初学者还比较难理解，以后学 Web 移动端的时候会用到。</p>
+<p>（2）定义“关键词”：</p>
+<p>举例如下：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"Keywords"</span> <span class="attr">content</span>=<span class="string">"网易,邮箱,游戏,新闻,体育,娱乐,女性,亚运,论坛,短信"</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>这些关键词，就是告诉搜索引擎，这个网页是干嘛的，能够提高搜索命中率。让别人能够找到你，搜索到你。</p>
+<p>（3）定义“页面描述”：</p>
+<p>meta除了可以设置字符集，还可以设置关键字和页面描述。</p>
+<p>只要设置Description页面描述，那么百度搜索结果，就能够显示这些语句，这个技术叫做<strong>SEO</strong>（search engine optimization，搜索引擎优化）。</p>
+<p>设置页面描述的举例：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"Description"</span> <span class="attr">content</span>=<span class="string">"网易是中国领先的互联网技术公司，为用户提供免费邮箱、游戏、搜索引擎服务，开设新闻、娱乐、体育等30多个内容频道，及博客、视频、论坛等互动交流，网聚人的力量。"</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>效果如下：</p>
+<p><img src="/images/html/20170629_1743.png" alt=""></p>
+<p><strong>title 标签</strong>:</p>
+<p>用于设置网页标题：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">title</span>&gt;</span>网页的标题<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>title也是有助于SEO搜索引擎优化的。</p>
+<p><strong>base标签</strong>：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">base</span> <span class="attr">href</span>=<span class="string">"/"</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>base 标签用于指定基础的路径。指定之后，所有的 a 链接都是以这个路径为基准。</p>
+
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/tags/html/" rel="tag">html</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+<div class="card">
+    <div class="card-content">
+        <h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3>
+        <div class="buttons is-centered">
+            
+                
+<a class="button is-info donate">
+    <span class="icon is-small">
+        <i class="fab fa-alipay"></i>
+    </span>
+    <span>支付宝</span>
+    <div class="qrcode"><img src="/images/WechatIMG2.jpeg" alt="支付宝"></div>
+</a>
+
+                
+                
+<a class="button is-success donate">
+    <span class="icon is-small">
+        <i class="fab fa-weixin"></i>
+    </span>
+    <span>微信</span>
+    <div class="qrcode"><img src="/images/WechatIMG1.jpeg" alt="微信"></div>
+</a>
+
+                
+        </div>
+    </div>
+</div>
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/2020/03/04/html/html5-%E8%AF%A6%E8%A7%A3/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">html5 详解</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/2020/03/02/vue/vuex-%E7%AE%80%E5%8D%95%E8%AE%A4%E8%AF%86/">
+                <span class="level-item">vuex 简单认识</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+                
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-3-widescreen  has-order-1 column-left ">
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <nav class="level">
+            <div class="level-item has-text-centered" style="flex-shrink: 1">
+                <div>
+                    
+                    <figure class="image is-128x128 has-mb-6">
+                        <img class="" src="/images/logo2.png" alt="小吴同学">
+                    </figure>
+                    
+                    <p class="is-size-4 is-block">
+                        小吴同学
+                    </p>
+                    
+                    
+                    <p class="is-size-6 is-block">
+                        Student
+                    </p>
+                    
+                    
+                    <p class="is-size-6 is-flex is-flex-center has-text-grey">
+                        <i class="fas fa-map-marker-alt has-mr-7"></i>
+                        <span>江苏</span>
+                    </p>
+                    
+                </div>
+            </div>
+        </nav>
+        <nav class="level is-mobile">
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        文章
+                    </p>
+                    <a href="/archives">
+                        <p class="title has-text-weight-normal">
+                            25
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        分类
+                    </p>
+                    <a href="/categories">
+                        <p class="title has-text-weight-normal">
+                            7
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        标签
+                    </p>
+                    <a href="/tags">
+                        <p class="title has-text-weight-normal">
+                            8
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!-- 
+        <div class="level">
+            <a class="level-item button is-link is-rounded" href="https://github.com/sqwm" target="_blank" rel="noopener">
+                关注我</a>
+        </div>
+         -->
+        <!-- 
+        
+        <div class="level is-mobile">
+            
+            <a class="level-item button is-white is-marginless" target="_blank" rel="noopener"
+                title="Github" href="https://github.com/sqwm">
+                
+                <i class="fab fa-github"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank" rel="noopener"
+                title="Facebook" href="https://facebook.com">
+                
+                <i class="fab fa-facebook"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank" rel="noopener"
+                title="Twitter" href="https://twitter.com">
+                
+                <i class="fab fa-twitter"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank" rel="noopener"
+                title="Dribbble" href="https://dribbble.com">
+                
+                <i class="fab fa-dribbble"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank" rel="noopener"
+                title="RSS" href="/">
+                
+                <i class="fas fa-rss"></i>
+                
+            </a>
+            
+        </div>
+         -->
+    </div>
+</div>
+    
+        
+
+    <div class="card widget" id="toc">
+        <div class="card-content">
+            <div class="menu">
+                <h3 class="menu-label">
+                    目录
+                </h3>
+                <ul class="menu-list"><li>
+        <a class="is-flex" href="#本文主要内容">
+        <span class="has-mr-6">1</span>
+        <span>本文主要内容</span>
+        </a></li><li>
+        <a class="is-flex" href="#前言">
+        <span class="has-mr-6">2</span>
+        <span>前言</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#web标准">
+        <span class="has-mr-6">2.1</span>
+        <span>web标准</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#编辑器相关">
+        <span class="has-mr-6">3</span>
+        <span>编辑器相关</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#VS-Code-的使用">
+        <span class="has-mr-6">3.1</span>
+        <span>VS Code 的使用</span>
+        </a></li><li>
+        <a class="is-flex" href="#Sublime-Text-的使用">
+        <span class="has-mr-6">3.2</span>
+        <span>Sublime Text 的使用</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#一、HTML的介绍">
+        <span class="has-mr-6">4</span>
+        <span>一、HTML的介绍</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#1、HTML的概述：">
+        <span class="has-mr-6">4.1</span>
+        <span>1、HTML的概述：</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#HTML是负责描述文档语义的语言">
+        <span class="has-mr-6">4.1.1</span>
+        <span>HTML是负责描述文档语义的语言</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#2、HTML的历史">
+        <span class="has-mr-6">4.2</span>
+        <span>2、HTML的历史</span>
+        </a></li><li>
+        <a class="is-flex" href="#3、HTML的网络术语">
+        <span class="has-mr-6">4.3</span>
+        <span>3、HTML的网络术语</span>
+        </a></li><li>
+        <a class="is-flex" href="#4、HTML的编辑工具">
+        <span class="has-mr-6">4.4</span>
+        <span>4、HTML的编辑工具</span>
+        </a></li><li>
+        <a class="is-flex" href="#5、计算机编码介绍">
+        <span class="has-mr-6">4.5</span>
+        <span>5、计算机编码介绍</span>
+        </a></li><li>
+        <a class="is-flex" href="#6、HTML颜色介绍">
+        <span class="has-mr-6">4.6</span>
+        <span>6、HTML颜色介绍</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#二、HTML的规范">
+        <span class="has-mr-6">5</span>
+        <span>二、HTML的规范</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#1、编写XHTML的规范：">
+        <span class="has-mr-6">5.1</span>
+        <span>1、编写XHTML的规范：</span>
+        </a></li><li>
+        <a class="is-flex" href="#2、HTML的基本语法特性">
+        <span class="has-mr-6">5.2</span>
+        <span>2、HTML的基本语法特性</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#（1）HTML对换行不敏感，对tab不敏感">
+        <span class="has-mr-6">5.2.1</span>
+        <span>（1）HTML对换行不敏感，对tab不敏感</span>
+        </a></li><li>
+        <a class="is-flex" href="#（2）空白折叠现象">
+        <span class="has-mr-6">5.2.2</span>
+        <span>（2）空白折叠现象</span>
+        </a></li><li>
+        <a class="is-flex" href="#（3）标签要严格封闭">
+        <span class="has-mr-6">5.2.3</span>
+        <span>（3）标签要严格封闭</span>
+        </a></li></ul></li></ul></li><li>
+        <a class="is-flex" href="#三、HTML结构详解">
+        <span class="has-mr-6">6</span>
+        <span>三、HTML结构详解</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#快速生成-html-的骨架">
+        <span class="has-mr-6">6.1</span>
+        <span>快速生成 html 的骨架</span>
+        </a></li><li>
+        <a class="is-flex" href="#1、文档声明头">
+        <span class="has-mr-6">6.2</span>
+        <span>1、文档声明头</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#HTML4-01有哪些规范呢？">
+        <span class="has-mr-6">6.2.1</span>
+        <span>HTML4.01有哪些规范呢？</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#2、头标签">
+        <span class="has-mr-6">6.3</span>
+        <span>2、头标签</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#html5-的比较完整的骨架：">
+        <span class="has-mr-6">6.3.1</span>
+        <span>html5 的比较完整的骨架：</span>
+        </a></li></ul></li></ul></li></ul>
+            </div>
+        </div>
+    </div>
+
+    
+        <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            链接
+        </h3>
+        <ul class="menu-list">
+        
+            <li>
+                <a class="level is-mobile" href="https://www.runoob.com/" target="_blank" rel="noopener">
+                    <span class="level-left">
+                        <span class="level-item">菜鸟教程</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">www.runoob.com</span>
+                    </span>
+                </a>
+            </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                分类
+            </h3>
+            <ul class="menu-list">
+            <li>
+        <a class="level is-marginless" href="/categories/ES6/">
+            <span class="level-start">
+                <span class="level-item">ES6</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/css/">
+            <span class="level-start">
+                <span class="level-item">css</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/js/">
+            <span class="level-start">
+                <span class="level-item">js</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">2</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/npm/">
+            <span class="level-start">
+                <span class="level-item">npm</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/vue/">
+            <span class="level-start">
+                <span class="level-item">vue</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/%E5%89%8D%E7%AB%AF/">
+            <span class="level-start">
+                <span class="level-item">前端</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">14</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/%E9%9D%A2%E8%AF%95/">
+            <span class="level-start">
+                <span class="level-item">面试</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">4</span>
+            </span>
+        </a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    
+        <div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            最新文章
+        </h3>
+        
+        <article class="media">
+            
+            <a href="/2020/03/08/js/js%E7%AE%80%E4%BB%8B/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="js简介">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-08T05:11:49.000Z">2020-03-08</time></div>
+                    <a href="/2020/03/08/js/js%E7%AE%80%E4%BB%8B/" class="title has-link-black-ter is-size-6 has-text-weight-normal">js简介</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/js/">js</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2020/03/08/css/05-CSS%E7%9B%92%E6%A8%A1%E5%9E%8B%E8%AF%A6%E8%A7%A3%EF%BC%88%E9%87%8D%E7%82%B9%EF%BC%89/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="05-CSS盒模型详解（重点）">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-08T05:04:19.000Z">2020-03-08</time></div>
+                    <a href="/2020/03/08/css/05-CSS%E7%9B%92%E6%A8%A1%E5%9E%8B%E8%AF%A6%E8%A7%A3%EF%BC%88%E9%87%8D%E7%82%B9%EF%BC%89/" class="title has-link-black-ter is-size-6 has-text-weight-normal">05-CSS盒模型详解（重点）</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2020/03/08/js/js%E5%8F%98%E9%87%8F/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="js变量">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-08T02:13:03.000Z">2020-03-08</time></div>
+                    <a href="/2020/03/08/js/js%E5%8F%98%E9%87%8F/" class="title has-link-black-ter is-size-6 has-text-weight-normal">js变量</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2020/03/08/css/07-CSS%E5%AE%9A%E4%BD%8D/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="07-CSS定位">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-07T18:06:28.000Z">2020-03-08</time></div>
+                    <a href="/2020/03/08/css/07-CSS%E5%AE%9A%E4%BD%8D/" class="title has-link-black-ter is-size-6 has-text-weight-normal">07-CSS定位</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2020/03/08/css/06-CSS%E6%B5%AE%E5%8A%A8%EF%BC%88%E9%87%8D%E7%82%B9%EF%BC%89/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="06-CSS浮动（重点）">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-07T17:05:24.000Z">2020-03-08</time></div>
+                    <a href="/2020/03/08/css/06-CSS%E6%B5%AE%E5%8A%A8%EF%BC%88%E9%87%8D%E7%82%B9%EF%BC%89/" class="title has-link-black-ter is-size-6 has-text-weight-normal">06-CSS浮动（重点）</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+    </div>
+</div>
+    
+    
+        <div class="column-right-shadow is-hidden-widescreen ">
+        
+            <div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            标签云
+        </h3>
+        <a href="/tags/ES6/" style="font-size: 10px;">ES6</a> <a href="/tags/css/" style="font-size: 20px;">css</a> <a href="/tags/html/" style="font-size: 16.67px;">html</a> <a href="/tags/js/" style="font-size: 13.33px;">js</a> <a href="/tags/npm/" style="font-size: 10px;">npm</a> <a href="/tags/vuex/" style="font-size: 10px;">vuex</a> <a href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98%E5%9F%BA%E7%A1%80/" style="font-size: 13.33px;">面试题基础</a> <a href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%AE%97%E6%B3%95/" style="font-size: 13.33px;">面试题算法</a>
+    </div>
+</div>
+        
+            <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            归档
+        </h3>
+        <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2020/03/">
+                <span class="level-start">
+                    <span class="level-item">三月 2020</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">18</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2020/02/">
+                <span class="level-start">
+                    <span class="level-item">二月 2020</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">6</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/03/">
+                <span class="level-start">
+                    <span class="level-item">三月 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+        
+            <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                标签
+            </h3>
+            <div class="field is-grouped is-grouped-multiline">
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/ES6/">
+                        <span class="tag">ES6</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/css/">
+                        <span class="tag">css</span>
+                        <span class="tag is-grey">8</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/html/">
+                        <span class="tag">html</span>
+                        <span class="tag is-grey">7</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/js/">
+                        <span class="tag">js</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/npm/">
+                        <span class="tag">npm</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/vuex/">
+                        <span class="tag">vuex</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98%E5%9F%BA%E7%A1%80/">
+                        <span class="tag">面试题基础</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%AE%97%E6%B3%95/">
+                        <span class="tag">面试题算法</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+        
+        </div>
+    
+</div>
+
+                
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only has-order-3 column-right ">
+    
+        <div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            标签云
+        </h3>
+        <a href="/tags/ES6/" style="font-size: 10px;">ES6</a> <a href="/tags/css/" style="font-size: 20px;">css</a> <a href="/tags/html/" style="font-size: 16.67px;">html</a> <a href="/tags/js/" style="font-size: 13.33px;">js</a> <a href="/tags/npm/" style="font-size: 10px;">npm</a> <a href="/tags/vuex/" style="font-size: 10px;">vuex</a> <a href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98%E5%9F%BA%E7%A1%80/" style="font-size: 13.33px;">面试题基础</a> <a href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%AE%97%E6%B3%95/" style="font-size: 13.33px;">面试题算法</a>
+    </div>
+</div>
+    
+        <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            归档
+        </h3>
+        <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2020/03/">
+                <span class="level-start">
+                    <span class="level-item">三月 2020</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">18</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2020/02/">
+                <span class="level-start">
+                    <span class="level-item">二月 2020</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">6</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/03/">
+                <span class="level-start">
+                    <span class="level-item">三月 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+    
+        <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                标签
+            </h3>
+            <div class="field is-grouped is-grouped-multiline">
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/ES6/">
+                        <span class="tag">ES6</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/css/">
+                        <span class="tag">css</span>
+                        <span class="tag is-grey">8</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/html/">
+                        <span class="tag">html</span>
+                        <span class="tag is-grey">7</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/js/">
+                        <span class="tag">js</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/npm/">
+                        <span class="tag">npm</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/vuex/">
+                        <span class="tag">vuex</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98%E5%9F%BA%E7%A1%80/">
+                        <span class="tag">面试题基础</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%AE%97%E6%B3%95/">
+                        <span class="tag">面试题算法</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+</div>
+
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/">
+                
+                    <img src="/images/logo2.png" alt="html-标签图文详解" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2020 wj&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> & <a
+                        href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a>
+                
+                <br>
+                <span id="busuanzi_container_site_uv">
+                共<span id="busuanzi_value_site_uv">0</span>个访客
+                </span>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus">
+                        
+                        <i class="fab fa-github"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+        <div class="level">
+            <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middl">
+                <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+                <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+            </div>
+        </div>
+    </div>
+
+</footer>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script>
+    var now = new Date(); 
+    function createtime() { 
+        var grt= new Date("02/25/2020 00:00:00");//此处修改你的建站时间或者网站上线时间 
+        now.setTime(now.getTime()+250); 
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+        document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 "; 
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
+    } 
+setInterval("createtime()",250);
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("zh-CN");</script>
+
+
+<script>
+var IcarusThemeSettings = {
+    site: {
+        url: 'https://yoursite.com',
+        external_link: {"enable":true,"exclude":[]}
+    },
+    article: {
+        highlight: {
+            clipboard: true,
+            fold: 'unfolded'
+        }
+    }
+};
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+
+
+
+
+
+<script src="/js/animation.js"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+<script src="/js/gallery.js" defer></script>
+
+
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        });
+    });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    MathJax.Hub.Config({
+        'HTML-CSS': {
+            matchFontHeight: false
+        },
+        SVG: {
+            matchFontHeight: false
+        },
+        CommonHTML: {
+            matchFontHeight: false
+        },
+        tex2jax: {
+            inlineMath: [
+                ['$','$'],
+                ['\\(','\\)']
+            ]
+        }
+    });
+});
+</script>
+
+
+<a id="back-to-top" title="回到顶端" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+<script src="/js/back-to-top.js" defer></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/js/main.js" defer></script>
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="想要查找什么..." />
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: '(无标题)',
+            },
+            CONTENT_URL: '/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script src="/js/insight.js" defer></script>
+<link rel="stylesheet" href="/css/search.css">
+<link rel="stylesheet" href="/css/insight.css">
+    
+    <!-- 雪花特效 -->
+    <script type="text/javascript">
+        // var windowWidth = $(window).width();
+        // if (windowWidth > 480) {
+          document.write('<script type="text/javascript" src="/js/src/snow.js"><\/script>');
+        // }
+    </script>
+</body>
+</html>
